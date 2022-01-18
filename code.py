@@ -8,14 +8,13 @@ def are_valid_groups(student_numbers, groups):
         if len(group) >= 2 and len(group) <= 3:
             groups_2_3.append(True)
         else: groups_2_3.append(False)
-
         for student_number in student_numbers:
             if student_number in group and is_in_group[i] == True:
                 repeating.append(True)
             if student_number in group and is_in_group[i] == False:
                 is_in_group[i] = True
             i = i + 1
-    if False in is_in_group:
+    if True in is_in_group:
         return False
     elif True in repeating:
         return False
