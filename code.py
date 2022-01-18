@@ -3,9 +3,12 @@ def are_valid_groups(student_numbers, groups):
     for x in student_numbers:
         dict[x] = 0
     for x in groups:
-        if dict[x] == 1:
+        y = 0
+        for student in x:
+            if dict[student] == 1:
+                return False
+            else:
+                dict[student] = 1
+        if y < 2 or y > 3:
             return False
-        else:
-            dict[x] = 1
-
     return True
