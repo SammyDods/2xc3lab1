@@ -1,11 +1,11 @@
 def are_valid_groups(student_numbers, groups):
-    dict = {}
-    for x in student_numbers:
-        dict[x] = 0
-    for x in groups:
-        if dict[x] == 1:
-            return False
-        else:
-            dict[x] = 1
-
-    return True
+    counter = 0 
+    for student_id in student_numbers:
+        for group in groups:
+            for i in group:
+                if i == student_id:
+                    counter++1
+    if counter == 1 :
+        return True
+    else :
+        return False
