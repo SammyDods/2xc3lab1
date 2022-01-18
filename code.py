@@ -10,10 +10,10 @@ def are_valid_groups(student_numbers, groups):
             if student_number in group and is_in_group[i] == False:
                 is_in_group[i] = True
             i = i + 1
-    if False in is_in_group:
+    if True in is_in_group:
         return False
     elif True in repeating:
-        return False
+        return True
     else: return True
 
 
