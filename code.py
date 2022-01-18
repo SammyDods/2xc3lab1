@@ -1,10 +1,10 @@
 def are_valid_groups(student_numbers, groups):
 
-    is_in_group = [False]*len(student_numbers)
+    is_in_group = [False]*2*len(student_numbers)
     repeating = []
     for group in groups:
         i = 0
-        for student_number in student_numbers:
+        for student_number in student_number:
             if student_number in group and is_in_group[i] == True:
                 repeating.append(True)
             if student_number in group and is_in_group[i] == False:
