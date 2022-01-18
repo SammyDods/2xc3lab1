@@ -2,3 +2,4 @@ Name = Bhuvesh Chopra
 macid = choprab 
 mail = choprab@mcmaster.ca 
 Lab section = L01 
+Trial 1 
